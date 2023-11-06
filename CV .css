@@ -1,0 +1,193 @@
+*{
+  /*  untuk animasi scrolling  */
+  scroll-behavior: smooth;
+}
+/* styling body */
+body {
+  min-width: 90vw;
+  min-height: 90vh;
+  margin: 0;
+  /*  untuk mengganti font  */
+  font-family: "Inter", sans-serif;
+}
+
+/* styling navbar */
+nav {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  justify-content: center;
+  background-color: #352f44;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+nav a {
+  opacity: 50%;
+}
+
+nav a:hover {
+  opacity: 100%;
+}
+
+/* untuk menghapus styling default link */
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* untuk foto profil */
+img {
+  /*  width dan height disamakan agar menjadi kotak  */
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  /*  border radius agar menjadi bulat  */
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+/* styling list */
+li {
+  color: #b9b4c7;
+}
+
+/* styling section/bagian */
+section {
+  padding: 1.5rem 0;
+}
+
+/* tambah space atas untuk id section pertama */
+#introductions{
+  padding-top: 7rem;
+}
+
+.section {
+  max-width: 50%;
+}
+
+.section-2 {
+  width: 70%;
+}
+
+/* styling garis (elemen <hr/>) */
+hr {
+  border: 1px solid #5c5470;
+  margin-top: -1rem;
+}
+
+.opacity-low {
+  opacity: 50%;
+}
+
+/* agar children pada class ini menjadi tengah */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* teks dengan class ini akan rata kanan */
+.text-right {
+  text-align: right;
+}
+
+/* kelas untuk label bagian */
+.section-label {
+  opacity: 30%;
+  color: whitesmoke;
+  font-size: small;
+}
+
+/* styling warna */
+.white {
+  color: #faf0e6;
+}
+
+.purple-1 {
+  background-color: #352f44;
+}
+
+.purple-2 {
+  background-color: #252130;
+}
+
+.purple-3 {
+  color: #b9b4c7;
+}
+
+.yellow {
+  color: #f4ce14;
+}
+
+/* font-size digunakan untuk membuat ukuran teks menjadi kecil */
+.text-small {
+  font-size: small;
+}
+
+/* flex-direction jika digunakan dengan display:flex dapat menentukan arah elemen (column/horizontal dan row/vertikal) */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-item {
+  width: 70%;
+  /*  text-align digunakan untuk meratakan teks  */
+  text-align: justify;
+}
+
+/* garis vertikal diantara lingkaran */
+.timeline li {
+  border-left: 1px solid #655638;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+/* elemen terakhir tidak memiliki lingkaran */
+.timeline li.last{
+  border-left: 0;
+}
+
+/* untuk elemen lingkaran */
+.timeline li:before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #f4ce14;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.timeline-child {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+}
+
+/* garis horizontal di kanan lingkaran */
+.timeline-child::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 1rem;
+  height: 2px;
+  background-color: #f4ce14;
+}
